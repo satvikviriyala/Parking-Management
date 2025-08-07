@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block title %}User Dashboard{% endblock %}
+
+{% block content %}
+    <h2>User Dashboard</h2>
+    <p>Welcome, {{ current_user.username }}!</p>
+    <p>You can view available parking spots and make reservations here.</p>
+    <a href="{{ url_for('main.logout') }}">Logout</a>
+{% endblock %}
